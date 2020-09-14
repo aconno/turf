@@ -111,6 +111,9 @@
         #else
           #define TURF_PTR_SIZE 4 // 32-bit architecture
         #endif
+    #elif defined(__mips__)
+        #define TURF_CPU_MIPS 1
+        #define TURF_PTR_SIZE 4
     #else
         #error "Unrecognized target CPU!"
     #endif
